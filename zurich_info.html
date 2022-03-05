@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="zurich_info.js" defer></script>
+    <title>Zurich Sightseeing Information</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body style="width: 100%; background-image: url('img/website_background.jpg');">
+<br>
+<br>
+<h1 style="text-align: center;" class="text-muted">Zurich Sightseeing Information</h1>
+<br>
+<br>
+<form>
+    <label class="text-justify" for="query" style="margin: 20px; font-size: 16px;">Insert a word to get sightseeing recommendation in the city of Zurich. <br>
+        For example you  can try 'church', 'university' or 'bridge' and you will get results for related sightseeing   </label> <br>
+    <input style="margin: 20px;" id="query" type="text" name="query" placeholder="Enter word to search">
+
+    <button class="btn btn-primary" style="margin: -20px;" type="submit">Search</button>
+</form>
+
+<ul id="list"></ul>
+
+<div id="div1"></div>
+
+</body>
+</html>
