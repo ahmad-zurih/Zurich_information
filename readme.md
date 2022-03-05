@@ -13,4 +13,4 @@ You can type in certain words to search for in the city of Zurich. For example "
 The website can be accessed on the following link:
 
 
-https://ahmad-zurih.github.io/Zurich_information/
+https://ahmad-zurih.github.io/Zurich_information/index.html
