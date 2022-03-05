@@ -12,8 +12,9 @@ form.addEventListener("submit", function(event) {
             for (var elem of data) {
                 var descLower = elem.description.en.toLowerCase();
                 var attLower = attraction.toLowerCase();
+                var attWord = " " + attLower + " "
                 var cleanDescription = elem.description.en.replaceAll("</p>", "").replaceAll("<p>", "").replaceAll(".", ".\r\n");
-                if (descLower.includes(attLower)) {
+                if (descLower.match(attWord) == attWord) {
                     var li = document.createElement("li");
                     li.setAttribute('style', 'white-space: pre;')
                     li.textContent = "Attraction Name: " + elem.name.en + "\r\n";
