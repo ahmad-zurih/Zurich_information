@@ -5,7 +5,7 @@ var resultList = document.querySelector("ul");
 form.addEventListener("submit", function(event) {
     event.preventDefault();
     var attraction = form.query.value;
-    var request = new Request("https://api.ltwa.workers.dev/?https://www.zuerich.com/de/data?id=72");
+    var request = new Request("https://www.zuerich.com/en/api/v2/data?id=72");
     fetch(request)
     .then(function(response) {
         response.json().then(function(data) {
